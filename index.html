@@ -584,10 +584,12 @@
     <script type="text/javascript">
         $(document).ready(function() {
            $("#my-menu").mmenu().on( "closed.mm", function() {
+             $("#my-menu").css("display", "none");
                  $(".menu-adaptive-button").show();
               });
            $(".menu-adaptive-button").click(function() {
              $(".menu-adaptive-button").hide();
+             $("#my-menu").css("display", "block");
              $("#my-menu").trigger("open.mm");
            });
         });

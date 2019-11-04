@@ -2908,6 +2908,12 @@ input[id="tab-3"]:checked ~ .tabs-content .tab-3 {
 }
 
 @media (max-width: 730px) {
+  .menu-left-side .has-dropdown > a:after {
+    width: 17px;
+  }
+  .menu-left-side .has-dropdown {
+    padding: 13px;
+  }
   .menu-adaptive-button {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -3077,4 +3083,7 @@ input[id="tab-3"]:checked ~ .tabs-content .tab-3 {
       color: black;
       cursor: pointer;
       padding: 30px;
+  }
+  #my-menu {
+    display: none;
   }
