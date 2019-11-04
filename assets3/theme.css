@@ -2489,7 +2489,7 @@ body .option-selector {
 
   background-color: #ef7f1a;
   display: inline-block;
-  padding: 13px 17px 13px 30px;
+  padding: 11px 17px 13px 30px;
   position: relative;
 
 }
@@ -2656,7 +2656,7 @@ input[id="tab-3"]:checked ~ .tabs-content .tab-3 {
   position: absolute;
   top: -67px;
   right: 0;
-  width: 190px;
+  width: 85px;
   text-align: right;
 
 }
@@ -2664,6 +2664,9 @@ input[id="tab-3"]:checked ~ .tabs-content .tab-3 {
   font-size: 25px!important;
   padding: 0 0 0 30px !important;
   outline: 0px solid!important;
+}
+.owl-prev {
+  padding: 0!important;
 }
 .product-slide:hover .more-info-table,
 .product-slide:hover .hover-cover {
