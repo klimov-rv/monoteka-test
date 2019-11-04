@@ -1101,7 +1101,7 @@ header .icon-user {
   font-size: 36px; }
 
 header .icon-cart {
-  font-size: 40px; }
+  font-size: 19px; }
 
 header a {
   color: #000000; }
@@ -2078,9 +2078,6 @@ body .option-selector {
   transform: translate(-50%, -50%);
   z-index: 20; }
 
-.swiper-button-prev.promo-slider-prev {
-  left: 5%; }
-
 .swiper-button-prev.promo-slider-prev i {
   -webkit-transform: rotate(180deg);
   -moz-transform: rotate(180deg);
@@ -2095,7 +2092,18 @@ body .option-selector {
 .swiper-button-prev.promo-slider-prev, .swiper-button-next.promo-slider-next {
   background-image: none;
   font-size: 32px;
-  color: #fff; }
+  color: #5b523a;
+  height: 50px;
+  width: 50px;
+  border-radius: 100px;
+  border: 3px solid  #5b523a;
+  padding: 2px 7px;
+  background: #ffffff70;
+}
+
+.swiper-button-prev.promo-slider-prev {
+  left: 5%;
+  padding: 9px 7px 5px 0; }
 
 .promo-content {
   color: white;
@@ -2139,7 +2147,7 @@ body .option-selector {
   height: 45px;
   margin: 25px 0 0;
   text-transform: uppercase;
-  line-height: 37px;
+  line-height: 41px;
   width: 160px;
   font-size: 18px;
   background-color: #ef7f1a;
@@ -2720,7 +2728,7 @@ body .option-selector {
 }
 .menu-left-side .has-dropdown > a:after {
   font: normal normal normal 14px/1 FontAwesome;
-  content: "\f063";
+  content: "\f175";
   width: 57px;
   display: inline-block;
   text-align: right;
@@ -2776,6 +2784,10 @@ li.has-dropdown:hover ul.dropdown {
 }
 .item-catalog:hover {
   color: #ef7f1a;
+  text-decoration: none;
+}
+.item-catalog span {
+  font-size: 45px;
 }
 .item-catalog img {
   /* align-self: flex-start; */
@@ -3143,9 +3155,21 @@ input[id="tab-3"]:checked ~ .tabs-content .tab-3 {
   header .icon-user {
     font-size: 26px; } }
 @media (max-width: 480px) {
+  .logo {
+    min-width: 65px;
+  }
   header .icon-logo {
     font-size: 60px; }
-
+    .item-catalog p {
+      display: none;
+    }
+    .promo-content .button_slider {
+      color: #ef7f1a;
+      text-decoration: underline;
+      margin-bottom: 15px;
+      background: none;
+      border: 0px solid;
+  }
   header .phone {
     white-space: nowrap;
     width: -webkit-calc(100% - 60px);
