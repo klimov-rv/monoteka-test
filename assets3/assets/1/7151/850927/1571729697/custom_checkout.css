@@ -1,0 +1,213 @@
+/* line 10, custom_checkout.scss */
+.field {
+  margin-bottom: 20px; }
+
+/* line 13, custom_checkout.scss */
+#create_order {
+  margin: 0 0 20px 0 !important; }
+
+/* line 16, custom_checkout.scss */
+button + small {
+  line-height: 52px;
+  font-size: 15px; }
+
+/* line 20, custom_checkout.scss */
+.warning {
+  color: red; }
+
+/* line 23, custom_checkout.scss */
+#registered_client {
+  margin-bottom: calc(20px + 2%);
+  border-bottom: 1px solid #cccccc; }
+
+/* line 27, custom_checkout.scss */
+#registered_client + div {
+  float: none !important;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #cccccc; }
+
+/* line 32, custom_checkout.scss */
+#shipping_address,
+#delivery_variants {
+  margin-bottom: 20px;
+  border-bottom: 1px solid #cccccc; }
+
+/* line 37, custom_checkout.scss */
+.set-sidebar a.set-title, .set-title {
+  color: #000;
+  font-size: 22px;
+  vertical-align: middle;
+  display: inherit;
+  position: relative;
+  bottom: -2px;
+  text-transform: uppercase;
+  font-family: "PF Din Text Comp Pro", sans-serif; }
+
+/* line 47, custom_checkout.scss */
+.set-list {
+  margin: 0;
+  padding: 0;
+  list-style: 0;
+  margin-top: 20px; }
+
+/* line 53, custom_checkout.scss */
+.set-list-item .img {
+  width: 50px;
+  padding-bottom: 50px;
+  margin-right: 20px;
+  display: block;
+  background-size: cover; }
+
+/* line 60, custom_checkout.scss */
+.set-list-item {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #cccccc;
+  padding: 15px 0; }
+
+/* line 66, custom_checkout.scss */
+.set-list-item .description {
+  padding-top: 0;
+  width: calc(100% - 70px);
+  border-top: 0; }
+
+/* line 71, custom_checkout.scss */
+.set-list-item .description p {
+  margin: 0; }
+
+/* line 74, custom_checkout.scss */
+.set-list-item .description p:last-child {
+  font-weight: 400; }
+
+/* line 77, custom_checkout.scss */
+.set-meta .fc {
+  display: flex;
+  align-items: center;
+  font-size: 20px; }
+
+/* line 82, custom_checkout.scss */
+.set-meta p {
+  margin: 20px 0;
+  margin-right: 20px;
+  margin-bottom: 0; }
+
+/* line 87, custom_checkout.scss */
+.fc.b {
+  font-weight: 400; }
+
+/* line 90, custom_checkout.scss */
+.page-wrapper {
+  margin: 0 auto;
+  max-width: 800px; }
+
+/* line 94, custom_checkout.scss */
+.set-sidebar {
+  width: calc(45% - 40px);
+  float: right;
+  padding: 20px;
+  background: rgba(204, 204, 204, 0.18); }
+
+/* line 100, custom_checkout.scss */
+.set {
+  width: 55%;
+  float: left; }
+
+/* line 104, custom_checkout.scss */
+.set-list .set-list-item:first-child {
+  border-top: 1px solid #cccccc; }
+
+/* line 107, custom_checkout.scss */
+table tbody > tr:nth-child(odd) > td,
+table tbody > tr:nth-child(odd) > th {
+  background-color: #fff; }
+
+/* line 111, custom_checkout.scss */
+textarea {
+  width: 100% !important; }
+
+/* line 114, custom_checkout.scss */
+.field-content {
+  width: 100% !important; }
+
+/* line 117, custom_checkout.scss */
+#regular_client {
+  min-height: inherit; }
+
+/* line 120, custom_checkout.scss */
+input.textfield, textarea.textfield {
+  width: 100% !important; }
+
+/* line 124, custom_checkout.scss */
+.set.wide_set {
+  width: 100%;
+  margin: 0 auto;
+  float: none; }
+
+/* line 129, custom_checkout.scss */
+.set.wide_set .textfield {
+  max-width: 400px; }
+
+/* line 132, custom_checkout.scss */
+button {
+  outline: none !important; }
+
+/* line 136, custom_checkout.scss */
+.userbar .links {
+  padding: 15px;
+  background: rgba(204, 204, 204, 0.18);
+  margin-bottom: 20px;
+  color: #f6f6f6; }
+
+/* line 142, custom_checkout.scss */
+.links a {
+  color: #000000;
+  padding: 0 5px;
+  font-size: 18px;
+  white-space: nowrap; }
+
+/* line 148, custom_checkout.scss */
+.links a:hover {
+  color: #ffcc00; }
+
+/* line 151, custom_checkout.scss */
+.profile {
+  font-size: 20px;
+  margin-bottom: 20px; }
+
+/* line 155, custom_checkout.scss */
+#top_info + .set.wide_set {
+  max-width: inherit; }
+
+/* line 158, custom_checkout.scss */
+#orders_history thead th {
+  font-weight: normal;
+  text-transform: uppercase;
+  font-size: 13px; }
+
+/* line 163, custom_checkout.scss */
+#orders_history tfoot th {
+  font-size: 18px;
+  font-weight: 300; }
+
+/* line 167, custom_checkout.scss */
+#orders_history td a {
+  font-size: 16px;
+  color: #000000; }
+
+/* line 171, custom_checkout.scss */
+#orders_history tr:hover td {
+  background: rgba(204, 204, 204, 0.18); }
+
+@media (max-width: 768px) {
+  /* line 175, custom_checkout.scss */
+  .set-sidebar {
+    width: 100%;
+    float: none;
+    padding: 20px;
+    background: rgba(204, 204, 204, 0.18);
+    margin-top: 20px; }
+
+  /* line 182, custom_checkout.scss */
+  .set {
+    width: 100%;
+    float: none; } }
