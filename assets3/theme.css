@@ -927,7 +927,12 @@ footer .callback {
     margin-top: 30px; } }
 header {
   position: relative;
-  z-index: 5; }
+  z-index: 5;
+
+  padding: 35px 0 0; }
+  .carousels {
+    
+  padding:  0 0 35px; }
 
 .top-header .container {
   display: -webkit-box;
@@ -1875,22 +1880,19 @@ body .option-selector {
   transform: translate(-50%, -50%);
   z-index: 20; }
 
-.swiper-button-prev.promo-slider-prev i {
-  -webkit-transform: rotate(180deg);
-  -ms-transform: rotate(180deg);
-  transform: rotate(180deg);
-  display: block; }
-
-.swiper-button-prev.promo-slider-prev, .swiper-button-next.promo-slider-next {
+.swiper-button-prev.promo-slider-prev, 
+.swiper-button-next.promo-slider-next {
   background-image: none;
   font-size: 32px;
   color: #5b523a;
   height: 50px;
   width: 50px;
+  margin-top: -25px;
   border-radius: 100px;
   border: 2px solid  #5b523a;
-  padding: 1px 7px;
+  line-height: 53px;
   background: #ffffffc4;
+  text-align: center;
 }
 
 .swiper-button-next.promo-slider-next {
@@ -1898,7 +1900,7 @@ body .option-selector {
 
 .swiper-button-prev.promo-slider-prev {
   left: 5%;
-  padding: 9px 7px 5px 0; }
+ }
 
   .swiper-button-prev.promo-slider-prev:hover, 
   .swiper-button-next.promo-slider-next:hover {
@@ -2613,7 +2615,8 @@ li.has-dropdown:hover ul.dropdown {
   text-decoration: none;
 }
 .tabs {
-  margin-top: 35px;
+  margin: 35px 0;
+  padding: 0 10px;
   overflow: hidden;
 }
 .tabs input {
@@ -2630,18 +2633,27 @@ li.has-dropdown:hover ul.dropdown {
   font-size: 36px;
 }
 .tabs-content {
+
   position: relative;
-  padding: 15px;
-  margin: -15px;
+  width: auto;
+  min-height: 900px;
+
 }
 .tabs-content .tab-1,
 .tabs-content .tab-2,
 .tabs-content .tab-3 {
-  display: none;
+  opacity: 0;
+  transition: opacity .7s cubic-bezier(0.23, 1, 0.320, 1);
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
 }
 input[id="tab-1"]:checked ~ .tabs-content .tab-1,
 input[id="tab-2"]:checked ~ .tabs-content .tab-2,
 input[id="tab-3"]:checked ~ .tabs-content .tab-3 {
+  opacity: 1;
   display: block;
 }
 .tabs-content .owl-carousel .owl-stage-outer {
@@ -2908,6 +2920,10 @@ input[id="tab-3"]:checked ~ .tabs-content .tab-3 {
 }
 
 @media (max-width: 730px) {
+  
+  .item-catalog {
+      padding: 0;
+  }
   .menu-left-side .has-dropdown > a:after {
     width: 17px;
   }
@@ -2982,6 +2998,7 @@ input[id="tab-3"]:checked ~ .tabs-content .tab-3 {
   .menu-left-side .has-dropdown {
     width: 100%;
     text-align: center;
+    line-height: 19px;  
   }
 
   .box-shadow {
