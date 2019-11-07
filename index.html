@@ -27,10 +27,12 @@
 
     <!-- fixes -->
     <!--[if IE]>
-<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+        <link rel="stylesheet" type="text/css" href="assets3/all-ie-only.css" />
+        <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
     <!--[if lt IE 9]>
-<script src="//css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
-<![endif]-->
+<       script src="//css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+    <![endif]-->
+
 
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" />
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
@@ -104,9 +106,89 @@
             </nav>
         </header>
         <section class="promo">
+            
+            <div class="container ie-container">
+                <div class="flex-row">
+                    <div class="swiper-container js-promo ie-slider">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                            <!-- Slides -->
+    
+                            <div class="swiper-slide">
+                                <img src="static-insales.ru/img/banners/banner-wide-1.jpg" alt="Monoteka - промо">
+                                <div class="promo-content box-shadow ">
+                                    <h4 class="title">Monoteka-group — лучшие моменты 
+                                        жизни вместе с нашими платьями</h4>
+                                        <a href="#" class="button_slider">
+                                            Купить
+                                        </a>
+                                </div>
+                            </div>
+    
+                            <div class="swiper-slide">
+                                <img src="static-insales.ru/img/banners/banner-wide-3.jpg" alt="Monoteka - промо">
+                                <div class="promo-content box-shadow">
+                                    <h4 class="title">Акции на MONOteka — не упустите!</h4>
+                                    <a href="#" class="button_slider">
+                                        Смотреть
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- If we need navigation buttons -->
+                        <div class="swiper-buttons">
+                            <div class="swiper-button-prev promo-slider-prev">
+                                <i class="icon-long-arrow-left"></i>
+                            </div>
+                            <div class="swiper-button-next promo-slider-next">
+                                <i class="icon-long-arrow-right"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ie-right-box">
+                        <div class="promo-content box-shadow-2">
+                            <h4 class="title">Пиджаки</h4>
+                            <a href="#" class="promo-link">в наших магазинах</a>
+                        </div>
+                    </div>
+                    <div class="ie-right-box">
+                        <div class="promo-content box-shadow-2">
+                            <h4 class="title">Деловой стиль</h4>
+                            <a href="#" class="promo-link">узнать больше</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-row flex-nowrap">
+                    <a href="#" class="ie-item-catalog">
+                        <span class="icon-mt-cat-5"></span>
+                        <p>платья</p> 
+                    </a>
+                    <a href="#" class="ie-item-catalog">
+                        <span class="icon-mt-cat-2"></span>  
+                        <p> шубы</p>
+                    </a>
+                    <a href="#" class="ie-item-catalog">
+                        <span class="icon-mt-cat-1"></span>
+                        <p>пиджаки</p>
+                    </a>
+                    <a href="#" class="ie-item-catalog">
+                        <span class="icon-mt-cat-6"></span> 
+                        <p>блузки</p>
+                    </a>
+                    <a href="#" class="ie-item-catalog">
+                        <span class="icon-mt-cat-4"></span> 
+                        <p>джинсы</p>
+                    </a>
+                    <a href="#" class="ie-item-catalog">
+                        <span class="icon-mt-cat-3"></span>
+                        <p>рубашки</p>
+                    </a>
+                </div>
+            </div>
+
             <div class="container grid">
                 <!-- Slider main container -->
-                <div class="swiper-container js-promo promo-slider">
+                <div class="swiper-container js-promo">
                     <!-- Additional required wrapper -->
                     <div class="swiper-wrapper">
                         <!-- Slides -->
@@ -115,7 +197,7 @@
                             <img src="static-insales.ru/img/banners/banner-wide-1.jpg" alt="Monoteka - промо">
                             <div class="promo-content box-shadow ">
                                 <h4 class="title">Monoteka-group — лучшие моменты 
-                                    жизни вместе с нашими платьями</span>
+                                    жизни вместе с нашими платьями</h4>
                                     <a href="#" class="button_slider">
                                         Купить
                                     </a>
@@ -126,7 +208,7 @@
                             <img src="static-insales.ru/img/banners/banner-wide-3.jpg" alt="Monoteka - промо">
                             <div class="promo-content box-shadow ">
                                 <h4 class="title">Monoteka-group — лучшие моменты 
-                                    жизни вместе с нашими платьями</span>
+                                    жизни вместе с нашими платьями</h4>
                                 <a href="#" class="button_slider">
                                     Купить
                                 </a>
@@ -230,7 +312,7 @@
                                     </table>
                                     <a href="#"> Перейти в карточку</a>
                                 </div>
-                                <div class="product-sell grid">
+                                <div class="product-sell">
                                     <span class="product-info">
                                         <h4 class="title">Кожаная юбка</h4>
                                         <span class="text">Описание: Полосатая кофта из полосатого трикотажа, без молнии</span>
@@ -245,10 +327,11 @@
                                         <input id="siz4mod1" type="radio" name="mod1"/>
                                         <label for="siz4mod1">50</label>
                                     </div>
-                                    <p class="product-price"> <b> 790 р. </b> 
+                                    <p class="product-price"> 
+                                        <span class="product-subtext">размер</span>
+                                        <b> 790 р. </b> 
                                         <a href="#" class="buy-button"><i class="icon-cart"></i></a>
                                     </p>
-                                    <span class="product-subtext">размер</span>
                                 </div>
                             </li>
                             <li class="product-slide"> 
@@ -263,19 +346,20 @@
                                 </div>
                                 <img class="prod-flag" src="static-insales.ru/img/flag-esp.png" alt="flag russian">
                                 <span class="sticker">sale</span>
-                                <div class="product-sell grid">
+                                <div class="product-sell">
                                     <span class="product-info">
-                                        <h4 class="title">Кожаная юбка</h4>
+                                        <h4 class="title">Платье в горох с поясом</h4>
                                         <span class="text">Описание: Полосатая кофта из полосатого трикотажа, без молнии</span>
                                     </span>
                                     <div class="product-size"> 
                                         <input id="siz1mod2" type="radio" name="mod2"/>
                                         <label for="siz1mod2">46</label>
                                     </div>
-                                    <p class="product-price"> <del>1190 р.</del><b> 790 р. </b> 
+                                    <p class="product-price"> 
+                                        <span class="product-subtext">размер</span>
+                                        <del>1190 р.</del><b> 790 р. </b> 
                                         <a href="#" class="buy-button"><i class="icon-cart"></i></a>
                                     </p>
-                                    <span class="product-subtext">размер</span>
                                 </div>
                             </li>
                             <li class="product-slide"> 
@@ -289,9 +373,9 @@
                                 </div>
                                 <img class="prod-flag" src="static-insales.ru/img/flag-ru.png" alt="flag russian">
                                 <span class="sticker">new</span>
-                                <div class="product-sell grid">
+                                <div class="product-sell">
                                     <span class="product-info">
-                                        <h4 class="title">Кожаная юбка</h4>
+                                        <h4 class="title">Розовое платье</h4>
                                         <span class="text">Описание: Полосатая кофта из полосатого трикотажа, без молнии</span>
                                     </span>
                                     <div class="product-size"> 
@@ -304,10 +388,11 @@
                                         <input id="siz4mod3" type="radio" name="mod3"/>
                                         <label for="siz4mod3">50</label>
                                     </div>
-                                    <p class="product-price"> <b> 790 р. </b> 
+                                    <p class="product-price"> 
+                                        <span class="product-subtext">размер</span>
+                                        <b> 790 р. </b> 
                                         <a href="#" class="buy-button"><i class="icon-cart"></i></a>
                                     </p>
-                                    <span class="product-subtext">размер</span>
                                 </div>
                             </li>
                             <li class="product-slide"> 
@@ -321,7 +406,7 @@
                                 </div>
                                 <img class="prod-flag" src="static-insales.ru/img/flag-esp.png" alt="flag russian">
                                 <span class="sticker">sale</span>
-                                <div class="product-sell grid">
+                                <div class="product-sell">
                                     <span class="product-info">
                                         <h4 class="title">Кожаная юбка</h4>
                                         <span class="text">Описание: Полосатая кофта из полосатого трикотажа, без молнии</span>
@@ -340,10 +425,11 @@
                                         <input id="siz6mod4" type="radio" name="mod4"/>
                                         <label for="siz6mod4">54</label>
                                     </div>
-                                    <p class="product-price"> <b> 790 р. </b> 
+                                    <p class="product-price">
+                                        <span class="product-subtext">размер</span>
+                                        <b> 790 р. </b> 
                                         <a href="#" class="buy-button"><i class="icon-cart"></i></a>
                                     </p>
-                                    <span class="product-subtext">размер</span>
                                 </div>
                             </li>
                             <li class="product-slide"> 
@@ -357,7 +443,7 @@
                                 </div>
                                 <img class="prod-flag" src="static-insales.ru/img/flag-esp.png" alt="flag russian">
                                 <span class="sticker">new</span>
-                                <div class="product-sell grid">
+                                <div class="product-sell">
                                     <span class="product-info">
                                         <h4 class="title">Кожаная юбка</h4>
                                         <span class="text">Описание: Полосатая кофта из полосатого трикотажа, без молнии</span>
@@ -415,7 +501,7 @@
                                     </table>
                                     <a href="#"> Перейти в карточку</a>
                                 </div>
-                                <div class="product-sell grid">
+                                <div class="product-sell">
                                     <span class="product-info">
                                         <h4 class="title">Кожаная юбка</h4>
                                         <span class="text">Описание: Полосатая кофта из полосатого трикотажа, без молнии</span>
@@ -430,10 +516,11 @@
                                         <input id="siz4mod1" type="radio" name="mod1"/>
                                         <label for="siz4mod1">50</label>
                                     </div>
-                                    <p class="product-price"> <b> 790 р. </b> 
+                                    <p class="product-price"> 
+                                        <span class="product-subtext">размер</span>
+                                        <b> 790 р. </b> 
                                         <a href="#" class="buy-button"><i class="icon-cart"></i></a>
                                     </p>
-                                    <span class="product-subtext">размер</span>
                                 </div>
                             </li>
                             <li class="product-slide"> 
@@ -448,7 +535,7 @@
                                 </div>
                                 <img class="prod-flag" src="static-insales.ru/img/flag-esp.png" alt="flag russian">
                                 <span class="sticker">sale</span>
-                                <div class="product-sell grid">
+                                <div class="product-sell">
                                     <span class="product-info">
                                         <h4 class="title">Кожаная юбка</h4>
                                         <span class="text">Описание: Полосатая кофта из полосатого трикотажа, без молнии</span>
@@ -457,10 +544,11 @@
                                         <input id="siz1mod2" type="radio" name="mod2"/>
                                         <label for="siz1mod2">46</label>
                                     </div>
-                                    <p class="product-price"> <del>1190 р.</del><b> 790 р. </b> 
+                                    <p class="product-price">
+                                        <span class="product-subtext">размер</span> 
+                                        <del>1190 р.</del><b> 790 р. </b> 
                                         <a href="#" class="buy-button"><i class="icon-cart"></i></a>
                                     </p>
-                                    <span class="product-subtext">размер</span>
                                 </div>
                             </li>
                             <li class="product-slide"> 
@@ -474,7 +562,7 @@
                                 </div>
                                 <img class="prod-flag" src="static-insales.ru/img/flag-ru.png" alt="flag russian">
                                 <span class="sticker">new</span>
-                                <div class="product-sell grid">
+                                <div class="product-sell">
                                     <span class="product-info">
                                         <h4 class="title">Кожаная юбка</h4>
                                         <span class="text">Описание: Полосатая кофта из полосатого трикотажа, без молнии</span>
@@ -489,10 +577,11 @@
                                         <input id="siz4mod3" type="radio" name="mod3"/>
                                         <label for="siz4mod3">50</label>
                                     </div>
-                                    <p class="product-price"> <b> 790 р. </b> 
+                                    <p class="product-price">
+                                        <span class="product-subtext">размер</span>
+                                        <b> 790 р. </b> 
                                         <a href="#" class="buy-button"><i class="icon-cart"></i></a>
                                     </p>
-                                    <span class="product-subtext">размер</span>
                                 </div>
                             </li>
                             <li class="product-slide"> 
@@ -506,7 +595,7 @@
                                 </div>
                                 <img class="prod-flag" src="static-insales.ru/img/flag-esp.png" alt="flag russian">
                                 <span class="sticker">sale</span>
-                                <div class="product-sell grid">
+                                <div class="product-sell">
                                     <span class="product-info">
                                         <h4 class="title">Кожаная юбка</h4>
                                         <span class="text">Описание: Полосатая кофта из полосатого трикотажа, без молнии</span>
@@ -525,10 +614,11 @@
                                         <input id="siz6mod4" type="radio" name="mod4"/>
                                         <label for="siz6mod4">54</label>
                                     </div>
-                                    <p class="product-price"> <b> 790 р. </b> 
+                                    <p class="product-price">
+                                        <span class="product-subtext">размер</span>
+                                        <b> 790 р. </b> 
                                         <a href="#" class="buy-button"><i class="icon-cart"></i></a>
                                     </p>
-                                    <span class="product-subtext">размер</span>
                                 </div>
                             </li>
                             <li class="product-slide"> 
@@ -542,7 +632,7 @@
                                 </div>
                                 <img class="prod-flag" src="static-insales.ru/img/flag-esp.png" alt="flag russian">
                                 <span class="sticker">new</span>
-                                <div class="product-sell grid">
+                                <div class="product-sell">
                                     <span class="product-info">
                                         <h4 class="title">Кожаная юбка</h4>
                                         <span class="text">Описание: Полосатая кофта из полосатого трикотажа, без молнии</span>
@@ -557,10 +647,11 @@
                                         <input id="siz4mod5" type="radio" name="mod5"/>
                                         <label for="siz4mod5">50</label>
                                     </div>
-                                    <p class="product-price"> <b> 790 р. </b> 
+                                    <p class="product-price">
+                                        <span class="product-subtext">размер</span>
+                                        <b> 790 р. </b> 
                                         <a href="#" class="buy-button"><i class="icon-cart"></i></a>
                                     </p>
-                                    <span class="product-subtext">размер</span>
                                 </div>
                             </li>
                         </ul>
@@ -600,7 +691,7 @@
                                     </table>
                                     <a href="#"> Перейти в карточку</a>
                                 </div>
-                                <div class="product-sell grid">
+                                <div class="product-sell">
                                     <span class="product-info">
                                         <h4 class="title">Кожаная юбка</h4>
                                         <span class="text">Описание: Полосатая кофта из полосатого трикотажа, без молнии</span>
@@ -615,10 +706,11 @@
                                         <input id="siz4mod1" type="radio" name="mod1"/>
                                         <label for="siz4mod1">50</label>
                                     </div>
-                                    <p class="product-price"> <b> 790 р. </b> 
+                                    <p class="product-price">
+                                        <span class="product-subtext">размер</span>
+                                        <b> 790 р. </b> 
                                         <a href="#" class="buy-button"><i class="icon-cart"></i></a>
                                     </p>
-                                    <span class="product-subtext">размер</span>
                                 </div>
                             </li>
                             <li class="product-slide"> 
@@ -633,7 +725,7 @@
                                 </div>
                                 <img class="prod-flag" src="static-insales.ru/img/flag-esp.png" alt="flag russian">
                                 <span class="sticker">sale</span>
-                                <div class="product-sell grid">
+                                <div class="product-sell">
                                     <span class="product-info">
                                         <h4 class="title">Кожаная юбка</h4>
                                         <span class="text">Описание: Полосатая кофта из полосатого трикотажа, без молнии</span>
@@ -642,10 +734,11 @@
                                         <input id="siz1mod2" type="radio" name="mod2"/>
                                         <label for="siz1mod2">46</label>
                                     </div>
-                                    <p class="product-price"> <del>1190 р.</del><b> 790 р. </b> 
+                                    <p class="product-price"> 
+                                        <span class="product-subtext">размер</span>
+                                        <del>1190 р.</del><b> 790 р. </b> 
                                         <a href="#" class="buy-button"><i class="icon-cart"></i></a>
                                     </p>
-                                    <span class="product-subtext">размер</span>
                                 </div>
                             </li>
                             <li class="product-slide"> 
@@ -659,7 +752,7 @@
                                 </div>
                                 <img class="prod-flag" src="static-insales.ru/img/flag-ru.png" alt="flag russian">
                                 <span class="sticker">new</span>
-                                <div class="product-sell grid">
+                                <div class="product-sell">
                                     <span class="product-info">
                                         <h4 class="title">Кожаная юбка</h4>
                                         <span class="text">Описание: Полосатая кофта из полосатого трикотажа, без молнии</span>
@@ -674,10 +767,11 @@
                                         <input id="siz4mod3" type="radio" name="mod3"/>
                                         <label for="siz4mod3">50</label>
                                     </div>
-                                    <p class="product-price"> <b> 790 р. </b> 
+                                    <p class="product-price">
+                                        <span class="product-subtext">размер</span>
+                                        <b> 790 р. </b> 
                                         <a href="#" class="buy-button"><i class="icon-cart"></i></a>
                                     </p>
-                                    <span class="product-subtext">размер</span>
                                 </div>
                             </li>
                             <li class="product-slide"> 
@@ -691,7 +785,7 @@
                                 </div>
                                 <img class="prod-flag" src="static-insales.ru/img/flag-esp.png" alt="flag russian">
                                 <span class="sticker">sale</span>
-                                <div class="product-sell grid">
+                                <div class="product-sell">
                                     <span class="product-info">
                                         <h4 class="title">Кожаная юбка</h4>
                                         <span class="text">Описание: Полосатая кофта из полосатого трикотажа, без молнии</span>
@@ -710,10 +804,11 @@
                                         <input id="siz6mod4" type="radio" name="mod4"/>
                                         <label for="siz6mod4">54</label>
                                     </div>
-                                    <p class="product-price"> <b> 790 р. </b> 
+                                    <p class="product-price">
+                                        <span class="product-subtext">размер</span>
+                                        <b> 790 р. </b> 
                                         <a href="#" class="buy-button"><i class="icon-cart"></i></a>
                                     </p>
-                                    <span class="product-subtext">размер</span>
                                 </div>
                             </li>
                             <li class="product-slide"> 
@@ -727,7 +822,7 @@
                                 </div>
                                 <img class="prod-flag" src="static-insales.ru/img/flag-esp.png" alt="flag russian">
                                 <span class="sticker">new</span>
-                                <div class="product-sell grid">
+                                <div class="product-sell">
                                     <span class="product-info">
                                         <h4 class="title">Кожаная юбка</h4>
                                         <span class="text">Описание: Полосатая кофта из полосатого трикотажа, без молнии</span>
@@ -742,10 +837,11 @@
                                         <input id="siz4mod5" type="radio" name="mod5"/>
                                         <label for="siz4mod5">50</label>
                                     </div>
-                                    <p class="product-price"> <b> 790 р. </b> 
+                                    <p class="product-price">
+                                        <span class="product-subtext">размер</span>
+                                        <b> 790 р. </b> 
                                         <a href="#" class="buy-button"><i class="icon-cart"></i></a>
                                     </p>
-                                    <span class="product-subtext">размер</span>
                                 </div>
                             </li>
                         </ul>

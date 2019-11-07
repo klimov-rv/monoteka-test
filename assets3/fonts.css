@@ -96,14 +96,18 @@
   font-style: normal;
 
 }
-
 @font-face {
-  font-family: 'FuturaBookC';
-  src: url('FuturaBookC.woff') format('woff');
+  font-family: 'Yanone Kaffeesatz';
+  src: url('fonts/yanone/YanoneKaffeesatz-Regular.eot');
+  src: url('fonts/yanone/YanoneKaffeesatz-Regular.eot?#iefix') format('embedded-opentype'),
+      url('fonts/yanone/YanoneKaffeesatz-Regular.woff2') format('woff2'),
+      url('fonts/yanone/YanoneKaffeesatz-Regular.woff') format('woff'),
+      url('fonts/yanone/YanoneKaffeesatz-Regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
-
 }
+
+
 
 @font-face {
   font-family: 'icomoon';
