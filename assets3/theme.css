@@ -2630,7 +2630,7 @@ li.has-dropdown:hover ul.dropdown {
   cursor: pointer;
   display: inline-block;
   padding: 10px 60px 10px 0;
-  font-size: 36px;
+  font-size: 31px;
 }
 .tabs-content {
 
@@ -2655,6 +2655,7 @@ input[id="tab-2"]:checked ~ .tabs-content .tab-2,
 input[id="tab-3"]:checked ~ .tabs-content .tab-3 {
   opacity: 1;
   display: block;
+  max-width: 100%;
 }
 .tabs-content .owl-carousel .owl-stage-outer {
   overflow: visible;
@@ -2666,7 +2667,7 @@ input[id="tab-3"]:checked ~ .tabs-content .tab-3 {
 .owl-nav {
 
   position: absolute;
-  top: -67px;
+  top: -55px;
   right: 0;
   width: 85px;
   text-align: right;
@@ -2848,7 +2849,8 @@ input[id="tab-3"]:checked ~ .tabs-content .tab-3 {
   text-decoration: underline;
   display: inline-block;
 }
-.menu-adaptive-button {
+.menu-adaptive-button,
+.menu-adaptive-button-close {
   display: none;
 }
 
@@ -2930,7 +2932,8 @@ input[id="tab-3"]:checked ~ .tabs-content .tab-3 {
   .menu-left-side .has-dropdown {
     padding: 13px;
   }
-  .menu-adaptive-button {
+  .menu-adaptive-button,
+  .menu-adaptive-button-close {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2942,6 +2945,10 @@ input[id="tab-3"]:checked ~ .tabs-content .tab-3 {
             order: 1;
     -ms-flex-item-align: center;
         align-self: center;
+  }
+  
+  .menu-adaptive-button-close {
+    display: none;
   }
   .logo {
     -webkit-box-ordinal-group: 3;
@@ -3096,7 +3103,8 @@ input[id="tab-3"]:checked ~ .tabs-content .tab-3 {
   color: #000000; }
 
 
-    .menu-adaptive-button {
+    .menu-adaptive-button,
+    .menu-adaptive-button-close {
       color: black;
       cursor: pointer;
       padding: 30px;

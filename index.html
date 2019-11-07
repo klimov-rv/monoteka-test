@@ -69,6 +69,7 @@
             <nav class="container">
                 <div class="row top-header" role="navigation">
                     <div class="menu-adaptive-button" href="#menu"><i class="fa fa-bars"></i></div>
+                    <div class="menu-adaptive-button-close" ><i class="fa fa-close"></i></div>
                     <div class="menu-left-side">
                         <ul>
                             <li class="has-dropdown">
@@ -799,9 +800,11 @@
            $("#my-menu").mmenu().on( "closed.mm", function() {
              $("#my-menu").css("display", "none");
                  $(".menu-adaptive-button").show();
+                 $(".menu-adaptive-button-close").hide();
               });
            $(".menu-adaptive-button").click(function() {
              $(".menu-adaptive-button").hide();
+                 $(".menu-adaptive-button-close").show();
              $("#my-menu").css("display", "block");
              $("#my-menu").trigger("open.mm");
            });
