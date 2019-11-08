@@ -2581,7 +2581,7 @@ body .option-selector {
   display: inline-block;
   padding: 0 17px 0 30px;
   position: relative;
-  line-height: 43px;
+  line-height: 41px;
 }
 .menu-left-side .has-dropdown a {
   color: white;
@@ -2600,6 +2600,9 @@ body .option-selector {
   display: block;
   width: 100%;
   border-top: 1px solid white;
+}
+.additional-icon-btn {
+  align-self: center;
 }
 .logo {
   min-width: 130px;
@@ -2742,7 +2745,7 @@ input[id="tab-3"]:checked ~ .tabs-content .tab-3 {
 .owl-nav {
 
   position: absolute;
-  top: -55px;
+  top: -61px;
   right: 0;
   width: 85px;
   text-align: right;
@@ -2994,6 +2997,27 @@ input[id="tab-3"]:checked ~ .tabs-content .tab-3 {
 
 @media (max-width: 900px) {
   
+.swiper-button-prev.promo-slider-prev, 
+.swiper-button-next.promo-slider-next {
+  font-size: 17px;
+  height: 30px;
+  width: 30px;
+  border: 2px solid transparent;
+  line-height: 30px;
+  background: none;
+  text-align: center;
+  color: white;
+}
+.swiper-button-prev.promo-slider-prev:hover, 
+.swiper-button-next.promo-slider-next:hover {
+  border: 2px solid  white;
+  background: none;
+}
+.swiper-slide .promo-content .title {
+  max-height: 77px;
+  overflow: hidden;
+}
+  
   .item-catalog {
       padding: 0;
   }
@@ -3057,7 +3081,8 @@ input[id="tab-3"]:checked ~ .tabs-content .tab-3 {
         -ms-flex-pack: end;
             justify-content: flex-end;
   }
-  .top-header li {
+  .menu-left-side > ul > li,
+  .menu-right-side > ul > li {
     padding: 13px;
     display: none;
   }
@@ -3106,7 +3131,7 @@ input[id="tab-3"]:checked ~ .tabs-content .tab-3 {
     font-size: 26px; }
 
   header .icon-cart {
-    font-size: 30px; }
+    font-size: 23px; }
 
   header .icon-user {
     font-size: 26px; } }
@@ -3126,19 +3151,11 @@ input[id="tab-3"]:checked ~ .tabs-content .tab-3 {
       background: none;
       border: 0px solid;
   }
-  header .phone {
-    white-space: nowrap;
-    width: calc(100% - 60px); }
-
-  header .usercity .icon-angle {
-    font-size: 10px;
-    margin-left: 5px; }
-
-  header .icon-place {
-    margin-right: 5px; }
-
-  header .usercity span {
-    font-size: 14px; } }
+  .tabs {
+  display: flex;
+  flex-direction: column;
+  }
+ }
 .instagram-feed .swiper-slide {
   width: 338px; }
   .instagram-feed .swiper-slide a {
@@ -3176,9 +3193,10 @@ input[id="tab-3"]:checked ~ .tabs-content .tab-3 {
 
 .menu-adaptive-button,
 .menu-adaptive-button-close {
-    color: black;
-    cursor: pointer;
-    padding: 30px;
+  color: black;
+  cursor: pointer;
+  padding: 10px 27px;
+
 }
 #my-menu {
   display: none;
