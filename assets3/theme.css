@@ -2720,11 +2720,10 @@ li.has-dropdown:hover ul.dropdown {
 .tabs-content .tab-3 {
   opacity: 0;
   transition: opacity .7s cubic-bezier(0.23, 1, 0.320, 1);
-  display: block;
   position: absolute;
+  display: none;
   top: 0;
   left: 0;
-  display: block;
 }
 input[id="tab-1"]:checked ~ .tabs-content .tab-1,
 input[id="tab-2"]:checked ~ .tabs-content .tab-2,
